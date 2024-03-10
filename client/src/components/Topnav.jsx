@@ -3,8 +3,8 @@ import Icon from "../assets/gem.png";
 function Topnav() {
     return (
         <div>
-            <nav class="bg-white border-black  ">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-items-start mx-auto p-4">
+            <nav class="bg-white border-black   ">
+                <div class=" me-28 ms-28 flex flex-wrap items-center justify-items-start mx-auto p-4">
                     <a
                         href="https://flowbite.com/"
                         class="flex items-center space-x-3 rtl:space-x-reverse"
@@ -51,7 +51,7 @@ function Topnav() {
                             </li>
                             <li>
                                 <a
-                                    href="/"
+                                    href="/about"
                                     class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                                 >
                                     About Us
@@ -59,7 +59,7 @@ function Topnav() {
                             </li>
                             <li>
                                 <a
-                                    href="/"
+                                    href="/instructions"
                                     class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                                 >
                                     Instructions

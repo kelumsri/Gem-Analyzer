@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div>
             <footer class="bg-white rounded-lg shadow my-12">
-                <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <div class=" me-28 ms-28 mx-auto p-4 md:py-8">
                     <div class="sm:flex sm:items-center sm:justify-between">
                         <a
                             href="/"

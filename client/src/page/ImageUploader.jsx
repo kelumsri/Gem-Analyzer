@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Topnav from "../components/Topnav";
+import Footer from "../components/Footer";
 
 const Form = () => {
     const [email, setEmail] = useState("");
@@ -149,8 +150,12 @@ const Form = () => {
                             Continue
                         </button>
                     </div>
+                    
                 </form>
             </div>
+            <div>
+                        <Footer/>
+                    </div>
         </>
     );
 };
