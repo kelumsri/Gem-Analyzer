@@ -3,8 +3,8 @@ import Icon from "../assets/gem.png";
 function Topnav() {
     return (
         <div>
-            <nav class="bg-white border-black  ">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-items-start mx-auto p-4">
+            <nav class="bg-white border-black   ">
+                <div class=" me-28 ms-28 flex flex-wrap items-center justify-items-start mx-auto p-4">
                     <a
                         href="https://flowbite.com/"
                         class="flex items-center space-x-3 rtl:space-x-reverse"
@@ -24,7 +24,7 @@ function Topnav() {
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
-                            viewBox="0 0 17 14"
+                            viewBox="0 0 17 14" 
                         >
                             <path
                                 stroke="currentColor"
@@ -41,17 +41,17 @@ function Topnav() {
                     >
                         <ul class="font-medium font-poppins flex flex-col p-4 md:p-0 mt-4 border border-white rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                             <li>
-                                <a
-                                    href="/"
-                                    class="block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
-                                    aria-current="page"
-                                >
-                                    Home
+                            <a
+                                 href="/"
+                                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+                                aria-current="page"
+                            >
+                                Home
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href="/"
+                                    href="/about"
                                     class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                                 >
                                     About Us
@@ -59,7 +59,7 @@ function Topnav() {
                             </li>
                             <li>
                                 <a
-                                    href="/"
+                                    href="/instructions"
                                     class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                                 >
                                     Instructions

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Topnav from "../components/Topnav";
+import Footer from "../components/Footer";
+import background from '../assets/background.png'
 
 const Form = () => {
     const [email, setEmail] = useState("");
@@ -24,8 +26,8 @@ const Form = () => {
             <div>
                 <Topnav />
             </div>
-            <div>
-                <p className=" text-4xl font-bold max-w-5xl mx-auto mt-8">
+            <div className=" bg-cover bg-center" style={{backgroundImage: `url(${background})`}}>
+                <p className=" py-10 text-4xl font-bold max-w-5xl mx-auto mt-8">
                     Gem Analysis
                 </p>
                 <form
@@ -144,13 +146,17 @@ const Form = () => {
                     <div className="flex justify-end">
                         <button
                             type="submit"
-                            class=" ms-28 py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none bg-black rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 "
+                            class=" ms-28 py-2.5 px-5 me-2 mb-10 text-sm font-medium text-white focus:outline-none bg-black rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 "
                         >
                             Continue
                         </button>
                     </div>
+                    
                 </form>
             </div>
+            <div>
+                        <Footer/>
+                    </div>
         </>
     );
 };

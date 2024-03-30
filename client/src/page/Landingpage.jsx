@@ -1,6 +1,11 @@
 import React from "react";
 import Topnav from "../components/Topnav";
 import Footer from "../components/Footer";
+import homeImage_1 from "../assets/home_1.png";
+import homeImage_2 from "../assets/home_2.png";
+import homeImage_3 from "../assets/home_3.png";
+import contentData from "../assets/content.json";
+
 
 function Landingpage() {
     return (
@@ -8,23 +13,19 @@ function Landingpage() {
             <div>
                 <Topnav />
             </div>
-            <div class="grid grid-rows-4">
+            <div class=" flex flex-col">
                 <div>
                     <p class="text-4xl font-bold p-4 m-8 text-center items-center">
                         How does GemAnaIyzer work?
                     </p>
                 </div>
-                <div class=" grid grid-cols-2">
+                <div class=" grid grid-cols-2 justify-center items-center">
                     <div>
                         <p class="text-2xl font-bold p-4 ms-24 ">
-                            Getting Started with GemAnalyzer
+                        {contentData.section1.title}
                         </p>
                         <p class=" text-base  p-4 ms-24 me-24 ">
-                            As a new user, you can easily upload images of gems
-                            to GemAnalyzer for accurate analysis. Once you've
-                            uploaded an image, our advanced image recognition
-                            technology will identify the gem type and shape,
-                            providing you with detailed information.
+                        {contentData.section1.description}
                         </p>
                         <button
                             type="button"
@@ -32,21 +33,17 @@ function Landingpage() {
                         >
                             Learn More
                         </button>
-                    </div>
-                    <div>grid_2-2</div>
+                    </div >
+                    <div className="flex justify-center items-center"> <img src={homeImage_1} alt="Gem" className=" flex w-96 h-80" /></div>
                 </div>
-                <div class=" grid grid-cols-2">
-                    <div>grid_3-1</div>
+                <div class=" grid grid-cols-2 justify-center items-center ">
+                <div className="flex justify-center items-center"> <img src={homeImage_2} alt="Gem" className=" flex w-96 h-80" /> </div>
                     <div>
                         <p class="text-2xl font-bold p-4 ms-24 ">
-                            GemAnalyzer and Image
+                        {contentData.section2.title}
                         </p>
                         <p class=" text-base  p-4 ms-24 me-24 ">
-                            GemAnaIyzer utilizes cutting-edge image recognition
-                            technology to accurately identify gem types and
-                            shapes. Our system is built on a decentralized,
-                            open-source platform that ensures reliability and
-                            accessibility for all users.
+                        {contentData.section2.description}
                         </p>
                         <button
                             type="button"
@@ -56,23 +53,22 @@ function Landingpage() {
                         </button>
                     </div>
                 </div>
-                <div class=" grid grid-cols-2">
+                <div class=" grid grid-cols-2 justify-center items-center">
                     <div>
-                        {" "}
                         <p class="text-2xl font-bold p-4 ms-24 ">
-                            Explore the Power of GemAnalyzer
+                        {contentData.section3.title}
                         </p>
                         <p class=" text-base  p-4 ms-24 me-24">
-                            GemAnaIyzer Revolutionizes Gem Analysis
+                        {contentData.section3.description}
                         </p>
                         <button
                             type="button"
-                            class=" my-20 ms-28 py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none bg-black rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 "
+                            class=" my-0 ms-28 py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none bg-black rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 "
                         >
                             Learn More
                         </button>
                     </div>
-                    <div>grid_4-2</div>
+                    <div className="flex justify-center items-center"> <img src={homeImage_3} alt="Gem" className=" flex w-96 h-96" /></div>
                 </div>
             </div>
             <div>
