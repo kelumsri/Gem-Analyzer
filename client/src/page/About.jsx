@@ -1,6 +1,9 @@
 import React from 'react'
 import Topnav from '../components/Topnav'
 import Footer from '../components/Footer'
+import Top_image from "../assets/top_banner.png"
+import background from '../assets/background.png'
+import AboutData from '../assets/About.json'
 
 function About() {
   return (
@@ -8,22 +11,23 @@ function About() {
     <div>
         <Topnav/>
     </div>
-    <div className=" flex flex-col justify-end items-center ">
-        <div className=' bg-slate-400 w-full h-96'>
+
+    
+    <div className="flex flex-col justify-end items-center bg-cover bg-center" style={{backgroundImage: `url(${background})`}}>
+        <div className=' w-full h-96'>
         <p class="text-4xl font-bold justify-normal text-center items-center mt-10">About Me</p>
         <p class="text-2xl p-0 m-0 text-center items-center mb-10">GemAnalyzer</p>
         </div>
-        <div className=' bg-black w-6/12 rounded-3xl h-64 z-10 absolute '></div>
+        <div className=' w-6/12 rounded-3xl h-64 z-10 absolute '> <img src={Top_image} alt="Gem"  className=' h-64 w-full'/> </div>
     </div>
+
     <div className=' '>
     
-    <p className='ps-44 pe-44 pt-10 text-justify'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, 
-        remaining essentially unchanged. It was popularised in the 1960s with the release of 
-        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-        software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    <p className='ps-44 pe-44 pt-10 text-justify'>{AboutData.section.paragraph1}</p>
+    <p className='ps-44 pe-44 pt-4 text-justify'>{AboutData.section.paragraph2}</p>
+    <p className='ps-44 pe-44 pt-4 text-justify'>{AboutData.section.paragraph3}</p>
+    <p className='ps-44 pe-44 pt-4 text-justify'>{AboutData.section.paragraph4}</p>
+    
     </div>
     <div>
         <Footer/>

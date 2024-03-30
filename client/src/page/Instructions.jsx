@@ -1,15 +1,16 @@
 import React from "react";
 import Topnav from "../components/Topnav";
 import Footer from "../components/Footer";
+import background from '../assets/background.png'
 
 function Instructions() {
     return (<>
         <div>
             <Topnav/>
         </div>
-        <div className=" flex flex-col justify-center items-center ">
-            <div className="  w-6/12 h-64  flex flex-col items-center rounded-3xl bg-slate-200">
-                <p class="text-4xl font-bold pt-10 my-4 text-center items-center">
+        <div className=" py-20 flex flex-col justify-center items-center bg-cover bg-center " style={{backgroundImage: `url(${background})`}} >
+            <div className=" justify-center w-6/12 h-64  flex flex-col items-center rounded-3xl bg-slate-200">
+                <p class="text-4xl font-bold  my-4 text-center items-center">
                     How to upload images
                 </p>
                 <p>Uploading picture must be in PNG or JPG format</p>
