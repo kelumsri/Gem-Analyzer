@@ -13,13 +13,14 @@ const Carddata = () => {
     };
 
     return (
-        <div className=" grid grid-cols-4  justify-center items-center ">
+        <div className="  sm:grid grid-cols-4 px-32 sm:justify-center sm:items-center sm:text-center">
             <div>
                 <Card
                     title="Gem Upload Instructions"
                     description="Learn how to upload gem images for analysis"
                     imageUrl={gem_up_ins}
                     onClick={handleClick}
+                
                 />
             </div>
 

@@ -18,15 +18,15 @@ function About() {
         <p class="text-4xl font-bold justify-normal text-center items-center mt-10">About Me</p>
         <p class="text-2xl p-0 m-0 text-center items-center mb-10">GemAnalyzer</p>
         </div>
-        <div className=' w-6/12 rounded-3xl h-64 z-10 absolute '> <img src={Top_image} alt="Gem"  className=' h-64 w-full'/> </div>
+        <div className=' 2xl:w-6/12  rounded-3xl 2xl:h-64 z-10 absolute '> <img src={Top_image} alt="Gem"  className=' h-64 w-full'/> </div>
     </div>
 
     <div className=' '>
     
-    <p className='ps-44 pe-44 pt-10 text-justify'>{AboutData.section.paragraph1}</p>
-    <p className='ps-44 pe-44 pt-4 text-justify'>{AboutData.section.paragraph2}</p>
-    <p className='ps-44 pe-44 pt-4 text-justify'>{AboutData.section.paragraph3}</p>
-    <p className='ps-44 pe-44 pt-4 text-justify'>{AboutData.section.paragraph4}</p>
+    <p className='ps-44 pe-44 pt-10 sm:text-justify'>{AboutData.section.paragraph1}</p>
+    <p className='ps-44 pe-44 pt-4 sm:text-justify'>{AboutData.section.paragraph2}</p>
+    <p className='ps-44 pe-44 pt-4 sm:text-justify'>{AboutData.section.paragraph3}</p>
+    <p className='ps-44 pe-44 pt-4 sm:text-justify'>{AboutData.section.paragraph4}</p>
     
     </div>
     <div>

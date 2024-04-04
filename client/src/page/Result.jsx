@@ -114,7 +114,7 @@ function Result() {
                 <Topnav />
             </div>
 
-            <div className="flex flex-col">
+            <div className=" sm:flex flex-col">
                 <div className="relative flex m-0 w-full flex-col justify-center items-center ">
                     <div className="bg-black w-10/12 rounded-lg overflow-hidden">
                         <img
@@ -165,9 +165,11 @@ function Result() {
                         </button>
                     </div>
                 </div>
-                <div className="ps-32 pe-32">
+                
+                <div className=" sm:ps-32 sm:pe-32">
                     <CardData />
                 </div>
+                
             </div>
 
             <div>

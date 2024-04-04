@@ -13,13 +13,13 @@ function Landingpage() {
             <div>
                 <Topnav />
             </div>
-            <div class=" flex flex-col">
+            <div class=" sm:flex flex-col">
                 <div>
-                    <p class="text-4xl font-bold p-4 m-8 text-center items-center">
+                    <p class="text-4xl font-bold p-4 m-8 text-center sm:items-center">
                         How does GemAnaIyzer work?
                     </p>
                 </div>
-                <div class=" grid grid-cols-2 justify-center items-center">
+                <div class=" sm:grid grid-cols-2 justify-center items-center">
                     <div>
                         <p class="text-2xl font-bold p-4 ms-24 ">
                         {contentData.section1.title}
@@ -36,7 +36,7 @@ function Landingpage() {
                     </div >
                     <div className="flex justify-center items-center"> <img src={homeImage_1} alt="Gem" className=" flex w-96 h-80" /></div>
                 </div>
-                <div class=" grid grid-cols-2 justify-center items-center ">
+                <div class=" sm:grid grid-cols-2 justify-center items-center ">
                 <div className="flex justify-center items-center"> <img src={homeImage_2} alt="Gem" className=" flex w-96 h-80" /> </div>
                     <div>
                         <p class="text-2xl font-bold p-4 ms-24 ">
@@ -53,7 +53,7 @@ function Landingpage() {
                         </button>
                     </div>
                 </div>
-                <div class=" grid grid-cols-2 justify-center items-center">
+                <div class=" sm:grid grid-cols-2 justify-center items-center">
                     <div>
                         <p class="text-2xl font-bold p-4 ms-24 ">
                         {contentData.section3.title}
